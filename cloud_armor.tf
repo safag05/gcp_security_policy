@@ -6,7 +6,7 @@ resource "google_compute_security_policy" "safa-armor" {
     layer_7_ddos_defense_config {
       enable = true
       rule_visibility = "STANDARD"
-	  }
+    }
   }
 
   rule {
