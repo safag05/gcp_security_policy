@@ -1,6 +1,7 @@
 resource "google_compute_security_policy" "safa-armor" {
   name        = "${var.armor_name}-armor"
   description = "Safa Cloud Armor Policy"
+  provider    = "google-beta"
   
   adaptive_protection_config {
     layer_7_ddos_defense_config {
